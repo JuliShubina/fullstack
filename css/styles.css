@@ -86,6 +86,8 @@ h1, h2, h3, h4, h5,h6, p {
 
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -135,6 +137,27 @@ address{
 
 
 
+/*header*/
+.header-conteiner {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.header-nav{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.header-menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+
+
 /*hero-section*/
 
 .hero-section {
@@ -160,11 +183,20 @@ address{
 
 /*advantages-section*/
 
+.advantages-section {
+background-color: var(--color-brand-light);
+padding: 16px;
+}
+
 .advantages-list {
-    color: #FAF4EA;
-    background-color:var(--color-brand-light);
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  
+    
 }
 .advantages-item{
+    color: var(--color-light);
     font-size: 20px;
     font-weight: 300;
 }
@@ -183,9 +215,24 @@ address{
 
 
 /*tradition-section*/
+.tradition-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.tradition-contant {
+    max-width: 710px;
+}
+
 .tradishions-section {
     padding-top: 96px;
 }
+
+.tradition-text:last-child {
+    max-width: 340px;
+}
+
 .tradition-text .brend {
     color: var(--color-brand-light);
     font-weight: 600;
@@ -212,6 +259,22 @@ address{
 
 
 /*Formats-section*/
+.format-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.formats-item {
+    flex-basis: calc((100%-40px)/3);
+}
+
+.format-card {
+    border: 1px solid rebeccapurple;
+    border-radius: 16px;
+    padding: 24px;
+}
+
 .format-title {
     font-size: 24px;
     font-weight: 600;
