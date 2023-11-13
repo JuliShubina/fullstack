@@ -67,9 +67,9 @@
 
 .conteiner {
     width: 100% ;
-    max-width: 1272px;
+    max-width: 1288px;
     margin: 0 auto;
-    padding: 0 16px;
+    padding: 0 24px;
 }
 
 * {
@@ -92,6 +92,7 @@ ul {
 
 body {
     color: var(--color-primary-dark);
+    background-color: var(--color-light);
     font-family: poppins, sans-serif;
     font-size: 18px;
     font-weight: 400;
@@ -162,6 +163,10 @@ address{
 
 .hero-section {
     padding: 272px 0;
+    background-image: url(../images/couple-in-bakery.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 }
 
 .hero-title {
@@ -206,6 +211,9 @@ padding: 16px;
     font-weight: 900;
     line-height: 1.3;
 
+}
+.section-title.centered {
+    text-align: center;
 }
 
 .section-title .accent{
@@ -253,7 +261,20 @@ padding: 16px;
 }
 
 .chefs-title {
-    margin-bottom: 80px;
+    max-width: 520px;
+    margin: 0 auto 80px;
+}
+.chef-photo {
+    border-radius: 4px 4px 4px 200px;
+    box-shadow: -16px 16px 0 0 var(--color-light), -16px 16px 0 2px #A18268;
+}
+
+.chefs-title::after,
+.chefs-title::before {
+    display: block;
+    width: 352px;
+    border: 2px solid #CFCFBC;
+    content: ""; 
 }
 
 
@@ -270,6 +291,8 @@ padding: 16px;
 }
 
 .format-card {
+    height: 444px;
+    background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
     border: 1px solid rebeccapurple;
     border-radius: 16px;
     padding: 24px;
@@ -284,6 +307,29 @@ padding: 16px;
     font-size: 14px;
     font-weight: 300;
 }
+
+/*carousel-button*/
+.carousel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: transparent;
+    fill: var(--color-primary-dark);
+    border: 1px solid var(--color-primary-dark);
+    padding: 0;
+    cursor: pointer;
+
+}
+
+.carousel-button:hover {
+    background-color: var(--color-primary-dark);
+    fill: var(--color-light);
+
+}
+
 
 .formats-title {
     margin-bottom: 80px;
@@ -308,8 +354,24 @@ padding: 16px;
     color: var(--color-brand-light);  
 }
 
+.address-icon {
+    fill: var(--color-light);
+}
+
+.address-icon:hover {
+    fill:var(--color-brand-light);
+}
+
 .addres-copyrigh {
     font-size: 14px;
     font-weight: 400;
+}
+
+.footer {
+    background-image: url(../images/footer-backgraund.png);
+    background-color: var(--color-primary-dark);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 

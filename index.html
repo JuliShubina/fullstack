@@ -72,10 +72,11 @@
         </section>
         <section class="section" id="cooker_section">
             <div class="conteiner">
-                <h2 class="chefs-title section-title">Наші найкращі <span class="accent">шеф-кухарі</span></h2>
+                <h2 class="chefs-title section-title centered">Наші найкращі <span class="accent">шеф-кухарі</span></h2>
                 <ul>
                     <li>
                         <article>
+                            <img class="chef-photo" src="/images/nastya-chef.jpg" alt="Nastya chef">
                             <h3 class="chef-title">Настя</h3>
                             <p>Привіт, я Настя!</p>
                             <p>Вже 10 років, я втілюю у життя цікаві та смачні ідеї.</p>
@@ -84,6 +85,7 @@
                     </li>
                     <li>
                         <article>
+                            <img class="chef-photo" src="/images/vlad-chef.jpg" alt="Vlad chef">
                             <h3 class="chef-title">Влад</h3>
                             <p>Привіт, я Влад!</p>
                             <p>Мій кодитерський стаж вже 18 років.SHOP BEKERY - це наша любов, з якою ми ділимось кожен раз з Вами через
@@ -99,7 +101,12 @@
         </section>
         <section class="section" id="Formats-section">
             <div class="conteiner">
-                <h2 class="formats-title section-title">Формати</h2>
+                <h2 class="formats-title section-title centered">Формати</h2>
+                <button class="carousel-button" type="button">
+                    <svg  height="16" width="16">
+                        <use href="./images/icons.svg#icon-Arrow"></use>
+                    </svg>
+                </button>
                 <ul class="format-list">
                     <li class="formats-item">
                         <article class="format-card">
@@ -107,7 +114,8 @@
                             <div class="format-text">
                                 <p> Площа: до 120 м2</p>
                                 <p>Меню: розширене меню</p>
-                                <p>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби</p>
+                                <p>Штат: 2 продавці-касири, 2 пекарі, 2
+                                     помічники пекаря, 2 офіціанти-різнороби</p>
                                 <p>Посадкові місця: є</p>
                             </div>
                         </article>
@@ -118,7 +126,8 @@
                             <div class="format-text">
                                 <p>Площа: до 25 м2</p>
                                 <p>Меню: найпопулярніші позиції меню</p>
-                                <p>Штат: 2 продавці-касири, 2 пекарі, 1 помічник пекаря</p>
+                                <p>Штат: 2 продавці-касири, 2 пекарі, 1
+                                     помічник пекаря</p>
                                 <p>Посадкові місця: відсутні</p>
                             </div>
                         </article>
@@ -136,6 +145,11 @@
                         </article>
                     </li>
                 </ul>
+                <button class="carousel-button" type="button">
+                    <svg height="16" width="16">
+                        <use href="./images/icons.svg#icon-Arrow"></use>
+                    </svg>
+                </button>
             </div>
  
            
@@ -154,7 +168,7 @@
         </section>
 
     </main>
-    <footer>
+    <footer class="footer">
           <div class="conteiner">
             <nav>
                 <a href="#">
@@ -178,11 +192,15 @@
                     </li>
                     <li>
                         <a href="#"></a>
-                        <!--facebook icon-->
+                        <svg class="address-icon" height="32" width="32">
+                            <use href="./images/icons.svg#icon-facebook"></use> 
+                        </svg>
                     </li>
                     <li>
                         <a href="#"></a>
-                        <!--instagram icon-->
+                        <svg class="address-icon" height="32" width="32">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
                     </li>
                 </ul>
                 <a class="address-link" href="#" target="_blank">Політика конфіденційності</a>
