@@ -262,8 +262,8 @@ padding: 16px;
 /*Chefs-section*/
 
 .chefs-title {
-    max-width: 520px;
     margin: 0 auto 80px;
+    position: relative;
 }
 
 .chef-title{
@@ -280,6 +280,18 @@ padding: 16px;
     width: 352px;
     border: 2px solid #CFCFBC;
     content: "";
+}
+
+.chefs-title::before{
+    position: absolute;
+    left: 0;
+    bottom: 24px;
+}
+
+.chefs-title::after {
+    position: absolute;
+    right:0;
+    bottom: 24px;
 }
 
 .chefs-list {
@@ -401,9 +413,7 @@ padding: 16px;
 }
  
 /*footer*/
-.footer{
-    padding: 32px 0;
-}
+
 .footer-container {
     display: flex;
     gap: 20px;
@@ -459,6 +469,8 @@ padding: 16px;
 }
 
 .footer {
+    padding: 32px 0;
+    position: relative;
     background-image: url(../images/footer-backgraund.png);
     background-color: var(--color-primary-dark);
     background-repeat: no-repeat;
@@ -466,3 +478,55 @@ padding: 16px;
     background-position: center;
 }
 
+.footer::before{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 180px;
+    height: 120px;
+    background-repeat: no-repeat;
+    background-image:url(/images/decor-bread-small.png);
+    content: "";
+
+
+}
+
+.footer::after{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 380px;
+    height: 190px;
+    background-image: url(/images/decor-bread-big.png);
+    content: "";
+}
+
+/**Modal**/
+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5)
+
+}
+.backdrop.is-hidden {
+    display: none;
+}
+
+.modal{
+    position: relative;
+    width: 880px;
+    height: 880px;
+    background-color: var(--color-light);
+    border-radius: 32px;
+}
+.modal-btn-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}

@@ -27,7 +27,7 @@
                         <li><a class="link" href="#contakts-section">Контакти</a></li>
                     </ul>
                 </nav>
-                <button class="button" type="button"> Замовити дзвінок</button>
+                <button class="button modal-btn-open" type="button"> Замовити дзвінок</button>
             </div>
         </div>
 
@@ -72,7 +72,9 @@
         </section>
         <section class="section" id="cooker_section">
             <div class="conteiner">
-                <h2 class="chefs-title section-title centered"> Наші найкращі <span class="accent">шеф-кухарі</span></h2>
+                <h2 class="chefs-title section-title centered">
+                    Наші найкращі </br> 
+                    <span class="accent">шеф-кухарі</span></h2>
                 <ul class="chefs-list">
                     <li class="chefs-item">
                         <article class="chef-card">
@@ -226,5 +228,20 @@
 
 
     </footer>
+    <div class="backdrop">
+    <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+    </div>
+    </div>
+    <script>
+        const modal = document.querySelector('.backdrop');
+        const modalBtnOpen = document.querySelector('.modal-btn-open');
+        const modalBtnClose = document.querySelector('.modal-btn-close');
+
+        const toggleModal = () => modal.classList.toggle('is-hidden');
+
+        modalBtnOpen.addEventListener('click', toggleModal);
+        modalBtnClose.addEventListener('click', toggleModal);
+    </script>
 </body>
 </html>
