@@ -1,28 +1,25 @@
-.chefs-list {
-    display: flex;
-    gap: 40px 30px;
-    flex-wrap: wrap;
-}
-
-.chefs-item {
-
-    flex-basis: calc((100% - 30px) / 2);
-}
-
-.chef-text p {
-    margin-bottom: 24px;
-}
-
-.chef-text p :last-child {
-    margin-bottom: 0;
-}
-
 .chef-card {
     display: flex;
     gap: 30px;
+
+    &__photo {
+        border-radius: 4px 4px 4px 200px;
+        box-shadow: -16px 16px 0 0 var(--color-light), -16px 16px 0 2px #A18268;
+    }
+
+    &__title {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        margin-bottom: 24px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+ 
 }
 
-.chef-photo {
-    border-radius: 4px 4px 4px 200px;
-    box-shadow: -16px 16px 0 0 var(--color-light), -16px 16px 0 2px #A18268;
-}
