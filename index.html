@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="./scss/main.css">
 </head>
 <body>
-    <header>
-        <div class="conteiner">
+    <header class="header">
+        <div class="container">
             <div class="header__conteiner">
                 <nav class="header__nav">
                     <a href="./index.html">
@@ -27,7 +27,17 @@
                         <li><a class="link" href="#contakts-section">Контакти</a></li>
                     </ul>
                 </nav>
-                <button class="button modal-btn-open" type="button"> Замовити дзвінок</button>
+                <button class="header__button button modal-btn-open" type="button"> 
+                    Замовити дзвінок
+                </button>
+                <button class="header__burger menu-btn-open" type="button">
+                    <svg  height="24" width="24">
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
+                <div class="mobile-menu">
+                    <button class="mobile-menu__btn-close menu-btn-close" type="button">Close</button>
+                </div>
             </div>
         </div>
 
@@ -36,10 +46,13 @@
         <section class="hero-section">
             <div class="contreiner">
                 <h1 class="hero-section__title"><span class="text-brand">Сучасна</span> пекарня</h1>
+                <button class="hero-section__button button modal-btn-open" type="button">
+                    Замовити дзвінок
+                </button>
             </div>
         </section>
         <section class="advantages-section">
-        <div class="conteiner">
+        <div class="container">
             <h2 class="hidden">Наші переваги</h2> <!--заголовок, що сховаємо-->
             <ul class="advantages-section__list">
                 <li class="advantages-section__item">Великий попит на ринку</li>
@@ -48,8 +61,8 @@
             </ul>
         </div>
         </section>
-        <section class="traditions-section section" id="traditions-section">
-            <div class="conteiner">
+         <section class="traditions-section section" id="traditions-section">
+            <div class="container">
                 <div class="traditions-section__container">
                     <div class="traditions-section__contant">
                         <h2 class="traditions-section__title section-title">Новий формат традицій</h2>
@@ -69,14 +82,14 @@
                             та висока якість обслуговування!
                         </p>
                     </div>
-                    <img src="./images/baker-man.jpg" alt="Чоловік пекар дивиться на батони">
+                    <img class="traditions-section__image" src="./images/baker-man.jpg" alt="Чоловік пекар дивиться на батони">
                 </div>
                
             </div>
 
         </section>
-        <section class="chefs-section section" id="cooker_section">
-            <div class="conteiner">
+      <!--  <section class="chefs-section section" id="cooker_section">
+            <div class="container">
                 <h2 class="chefs-section__title section__title section__title--centered">
                     Наші найкращі </br> 
                     <span class="text-brand-dark">шеф-кухарі</span></h2>
@@ -110,9 +123,9 @@
             </div>
 
            
-        </section>
-        <section class="formats-section section" id="Formats-section">
-            <div class="conteiner">
+        </section>-->
+       <!-- <section class="formats-section section" id="Formats-section">
+            <div class="container">
             <h2 class="formats-section__title section__title section__title--centered">Формати</h2>
                 <div class="formats-section__conteiner">
                 <button class="carousel-button" type="button">
@@ -170,7 +183,7 @@
             </div>        
         </section>
         <section class="contact-section section" id="contakts-section">
-           <div class="conteiner">
+           <div class="container">
             <div class="contact-section__container">
                 <div class="contact-section__form">
                     <h2 class="contact-section__title section__title">Приєднуйся до мережі пекарень</h2>
@@ -204,11 +217,11 @@
                 </iframe>
             </div>
            </div>
-        </section>
+        </section>-->
 
     </main>
-    <footer class="footer">
-          <div class="conteiner">
+   <!-- <footer class="footer">
+          <div class="container">
             <div class="footer-container">
                 <nav class="footer-nav">
                     <div class="footer-logo">
@@ -254,8 +267,8 @@
           </div>
 
 
-    </footer>
-    <div class="backdrop" >
+    </footer>-->
+    <div class="backdrop is-hidden" >
     <div class="modal">
         <button class="modal__btn-close modal-btn-close" type="button">Close</button>
         <h2>Замовити дзвінок</h2>
@@ -293,6 +306,18 @@
 
         modalBtnOpen.addEventListener('click', toggleModal);
         modalBtnClose.addEventListener('click', toggleModal);
+    </script>
+    <script>
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const menuBtnOpen = document.querySelector('.menu-btn-open');
+        const menuBtnClose = document.querySelector('.menu-btn-close');
+
+        const toggleMenu = () => mobileMenu.classList.toggle('is-open');
+    
+        menuBtnOpen.addEventListener('click', toggleMenu);
+        menuBtnClose.addEventListener('click', toggleMenu);
+
+
     </script>
 </body>
 </html>

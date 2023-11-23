@@ -11,7 +11,7 @@
     padding: 20px 0;
     transition: opacity 0.3s, visibility 0.3s;
 
-    &__is-hidden {
+    &.is-hidden {
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
@@ -23,7 +23,7 @@
 
 .modal {
     position: relative;
-    /*padding: 128px;*/
+    padding: 128px;
     width: 100%;
     max-width: 880px;
     height: 100%;
@@ -43,7 +43,6 @@
     }
 
     &__button {
-        display: block;
         margin: 0 auto 24px;
     }
 }
