@@ -12,14 +12,16 @@
     padding: 0;
     cursor: pointer;
 
+    &.next {
+        transform: rotate(180deg);
+    }
+
+    &:hover {
+        background-color: var(--color-primary-dark);
+        fill: var(--color-light);
+    }
+
 }
 
-.carousel-button.next {
-    transform: rotate(180deg);
-}
 
-.carousel-button:hover {
-    background-color: var(--color-primary-dark);
-    fill: var(--color-light);
 
-}

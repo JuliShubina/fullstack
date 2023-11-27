@@ -7,11 +7,11 @@
     background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261A 100%);
     border-radius: 16px;
     padding: 24px;
-    transition: transform 0.3s;
+    overflow: hidden;
+    
 
-    &:hover {
-        transform: scale(1.05);
-    }
+
+
 
     &__image {
         position: absolute;
